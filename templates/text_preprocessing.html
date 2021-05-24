@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Natural language processing</title>
+</head>
+<body bgcolor="#f02348">
+	<font color="#fff000" size="30"><center><u>Natural language processing on corona tweet to predict sentiment of Tweet</u></center></font>
+	<br>
+
+	<form action="{{ url_for('sentiment_predict') }}" method="POST">
+		<center>
+			<textarea name="message" rows="20" cols="50" style="background-color: greenyellow; border-radius: 10px;padding: 10px;font-size: 20px;" required='Reqired' placeholder="Enter the tweet whose sentiment to predict"/></textarea>
+				
+  				<br><br>
+  			<input type="submit" name="predict"  style="color: #1aff1a ; padding: 10px; border-radius: 6px; background-color: #0808f2; size: 30px; font-size: 24px;" size="30">
+
+		</center>
+	</form>
+	<br>
+	<br>
+	<center>
+	<u><font size="30" style="color:#00ffcc padding:2px; ">{{lstm_prediction}}</font></u>
+	</center>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Heroku Web App</title>
+</head>
+<body bgcolor="orange">
+	<font color="green" size="28" style="align-self"><center><u>Welcome To Home page of the web app</u></center></font>
+	<br>
+	<br>
+	<center>
+	<a href="{{ url_for('sentiment_predict') }}">
+		<img src="{{ url_for('static',filename='nlp_image.gif')}}" width="700" height="500" >
+	</a>
+	</center>
+
+
+</body>
+</html>
